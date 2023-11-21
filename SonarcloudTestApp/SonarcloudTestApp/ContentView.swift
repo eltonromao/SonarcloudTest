@@ -14,6 +14,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            
+            ForEach(0..<10, id: \.self) { item in
+                Text("Showing item \(item)")
+            }
+            .padding()
         }
         .padding()
     }
